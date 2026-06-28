@@ -119,5 +119,25 @@
     "confidence": 0.62,
     "attribution": "uncertain",
     "status": "classified"
+  },
+  {
+    "content_id": "1c0d927f-60d0-4fbd-b12b-ca60a11e8bbb",
+    "creator_id": "test-user-2",
+    "timestamp": "2026-06-28T01:53:22.165076Z",
+    "llm_score": 0.1,
+    "stylometric_score": 0.154,
+    "confidence": 0.132,
+    "attribution": "likely_human",
+    "status": "classified"
+  },
+  {
+    "content_id": "19693093-b8a1-45b1-ad97-3fb5b2061662",
+    "creator_id": "test-user-2",
+    "timestamp": "2026-06-28T01:53:24.023300Z",
+    "llm_score": 0.1,
+    "stylometric_score": 0.154,
+    "confidence": 0.132,
+    "attribution": "likely_human",
+    "status": "classified"
   }
 ]

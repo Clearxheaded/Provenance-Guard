@@ -54,7 +54,19 @@ The asymmetry is intentional — false positives (calling human work AI) are wor
 
 ### Example Submissions
 
-**High-confidence uncertain (signals disagreed):**
+**Casual human text (signals agreed, high confidence human):**
+```json
+{
+  "text": "ok so i finally tried that new ramen place downtown and honestly? underwhelming...",
+  "llm_score": 0.1,
+  "stylometric_score": 0.154,
+  "confidence": 0.132,
+  "attribution": "likely_human"
+}
+```
+Both signals agreed (spread 0.054) → weighted average applied → confidently human.
+
+**Formal AI-style text (signals disagreed, forced uncertain):**
 ```json
 {
   "text": "Artificial intelligence represents a transformative paradigm shift...",
@@ -65,17 +77,6 @@ The asymmetry is intentional — false positives (calling human work AI) are wor
 }
 ```
 Spread of 0.629 exceeded the 0.30 threshold → forced uncertain.
-
-**Lower LLM score (ambiguous human text):**
-```json
-{
-  "text": "The sun dipped below the horizon, painting the sky in hues of amber...",
-  "llm_score": 0.2,
-  "stylometric_score": 0.171,
-  "confidence": 0.183,
-  "attribution": "likely_human"
-}
-```
 
 ## Transparency Labels
 
